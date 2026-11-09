@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raj Balakrishnan · sites on GitHub Pages</title>
+<meta name="description" content="Every GitHub Pages site by Raj Balakrishnan: the AI Web Design Library, twelve guide-built sites and the projects that came before them.">
+<style>
+@font-face{font-family:"Bricolage Grotesque";font-weight:400 800;font-display:swap;src:url(bricolage-latin.woff2) format("woff2")}
+@font-face{font-family:"Nunito Sans";font-weight:400 800;font-display:swap;src:url(nunito-sans-latin.woff2) format("woff2")}
+:root{
+  --ink:#15171A; --paper:#E6E8EA; --sheet:#F4F5F6; --muted:#50555C; --line:#C9CDD2;
+  --red:#A8341A; --red-t:#8A2A14;
+  --display:"Bricolage Grotesque","Nunito Sans",system-ui,sans-serif; --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "Nunito Sans","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+::selection{background:#A8341A33}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:4px}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+
+header{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.head{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:end}
+.who{font-size:15px;color:var(--muted);margin:0 0 14px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(46px,7vw,100px);line-height:.95;letter-spacing:-.035em;margin:0;text-wrap:balance}
+h1 span{color:var(--red)}
+.lede{font-size:18px;color:var(--muted);max-width:44ch;margin:0}
+.jump{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:32px;font-weight:700;font-size:15px}
+.jump a{text-underline-offset:4px}
+.jump b{font-family:var(--display);color:var(--red-t);margin-right:6px}
+
+section{padding:56px 0 8px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:32px;flex-wrap:wrap}
+h2{font-family:var(--display);font-size:clamp(26px,3vw,36px);letter-spacing:-.02em;margin:0;line-height:1.1}
+.sec-head p{margin:0;color:var(--muted);max-width:56ch}
+
+.grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:44px 32px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.card{display:grid;gap:10px;align-content:start}
+.shot{position:relative;display:block;aspect-ratio:16/10;background:var(--sheet);border:1px solid var(--line);overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .6s var(--ease)}
+.shot:hover img{transform:scale(1.03)}
+.tag{position:absolute;left:0;top:0;background:var(--ink);color:var(--paper);font-family:var(--display);font-weight:700;font-size:13.5px;padding:4px 10px}
+.card h3{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.01em;margin:4px 0 0;line-height:1.2}
+.card h3 a{text-decoration:none}
+.card h3 a:hover{color:var(--red-t)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.links{display:flex;gap:16px;font-size:14px;font-weight:700;flex-wrap:wrap}
+.links a{text-underline-offset:3px}
+.url{font-size:13.5px;color:var(--muted);overflow-wrap:anywhere}
+
+footer{border-top:1px solid var(--line);margin-top:64px;padding:24px 0 48px;color:var(--muted);font-size:14px}
+footer p{margin:0 0 6px;max-width:80ch}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+@media(max-width:980px){.grid{grid-template-columns:1fr 1fr}.head{grid-template-columns:1fr;gap:24px}}
+@media(max-width:620px){.wrap{padding:0 20px}.grid,.grid.two{grid-template-columns:1fr;gap:40px}header{padding-top:48px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="who">Raj Balakrishnan · github.com/raj-microsoft</p>
+    <div class="head">
+      <h1>Every site, <span>one page.</span></h1>
+      <p class="lede">All my GitHub Pages sites in one place: the AI Web Design Library, the twelve sites built by following its guides, and the hubs that collect them.</p>
+    </div>
+    <nav class="jump" aria-label="Sections">
+      <a href="#library"><b class="num">2</b>Library &amp; hubs</a>
+      <a href="#sites"><b class="num">12</b>Guide-built sites</a>
+      <a href="#earlier"><b class="num">1</b>Earlier builds</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="library">
+    <div class="sec-head">
+      <h2>Library &amp; hubs</h2>
+      <p>Where it starts: the curated resources, and the index of what was built from them.</p>
+    </div>
+    <ul class="grid two" data-group="library"></ul>
+  </section>
+
+  <section id="sites">
+    <div class="sec-head">
+      <h2>Twelve guide-built sites</h2>
+      <p>Each one follows one guide from the library, step by step from its original source.</p>
+    </div>
+    <ul class="grid" data-group="sites"></ul>
+  </section>
+
+  <section id="earlier">
+    <div class="sec-head">
+      <h2>Earlier builds</h2>
+      <p>The first pass at the same library: twelve smaller builds in one hub.</p>
+    </div>
+    <ul class="grid two" data-group="earlier"></ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Most sites use AI-generated imagery, labelled on each site. Brands, prices and people in them are fictional unless a source is cited.</p>
+    <p>Source for every site: <a href="https://github.com/raj-microsoft">github.com/raj-microsoft</a>.</p>
+  </div>
+</footer>
+
+<script>
+const S={
+ library:[
+  ['ai-web-design-library','AI Web Design Library','31 guides, tools, communities and leads on making AI-built websites look expensive.','Library'],
+  ['gh-pages-lab','Twelve guides, twelve sites','The lab index: which guide each site follows and what was swapped for a free tool.','Index']
+ ],
+ sites:[
+  ['tide-almanac','Tide Almanac','A North Sea tide clock, moon phases and the 1953 flood.','01'],
+  ['night-bakery','Nachtbakkerij','A night bakery in a canal city, with its oven timeline and Bread Club.','02'],
+  ['toolshed','The Toolshed','Fifteen free Google AI tools on a pegboard. Describe a job, the right tools swing forward.','03'],
+  ['sketchbook-nl','A Sketchbook of the Netherlands','Eight Dutch places: a photo on one page, a drawing on the other.','04'],
+  ['orbit-atlas','Orbit Atlas','The eight planets as moving posters, with real NASA photographs.','05'],
+  ['lantern-film','Lantern','A 30-second launch film for a fictional family AI.','06'],
+  ['exploded-chronograph','Meridian Noir','A chronograph that comes apart as you scroll, then reassembles.','07'],
+  ['bloom-scroll','Bloom','A tulip bulb grows into full flower as you scroll.','08'],
+  ['seven-motions','Seven Motions','One seed\u2019s journey told in seven animation styles.','09'],
+  ['obsidian-templates','OBSIDIAN/LIME','A dark templates studio built from a 13-section prompt.','11'],
+  ['prompt-to-page','Soft Orchard','Glossy jelly fruit to pull, recolour, slice and skewer.','15'],
+  ['twenty-thousand-leagues','Twenty Thousand Leagues','A descent with the Nautilus through Jules Verne\u2019s novel.','16']
+ ],
+ earlier:[
+  ['ai-web-design-projects','AI Web Design Projects','Twelve earlier builds in one hub, from AURUM to GRIMHAVEN.','Hub']
+ ]
+};
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+for(const [group,items] of Object.entries(S)){
+  document.querySelector(`[data-group="${group}"]`).innerHTML=items.map(([slug,name,line,tag])=>{
+    const live=`https://raj-microsoft.github.io/${slug}/`;
+    return `<li class="card">
+  <a class="shot" href="${live}" aria-label="Open ${esc(name)}"><img src="shots/${slug}.webp" alt="" width="960" height="600" loading="lazy" decoding="async"><span class="tag">${/^\d/.test(tag)?'Guide '+tag:tag}</span></a>
+  <h3><a href="${live}">${esc(name)}</a></h3>
+  <p>${esc(line)}</p>
+  <p class="url">raj-microsoft.github.io/${slug}</p>
+  <div class="links"><a href="${live}">Open site</a><a href="https://github.com/raj-microsoft/${slug}">Repository</a></div>
+</li>`}).join('');
+}
+</script>
+</body>
+</html>
